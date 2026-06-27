@@ -39,6 +39,9 @@ hl.monitor({
 hl.monitor({
 	output = "eDP-1",
 	disabled = true,
+--	mode = "auto",
+	position = "auto",
+	scale = "1",
 })
 
 ---------------------

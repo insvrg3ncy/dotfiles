@@ -1,9 +1,8 @@
 #!/usr/bin/env sh
 killall waybar
 
-theme="/CatMocha-HSlim"
+theme="/Oxocarbon-Vertical"
 
-# Если есть сохранённая тема — используем её
 if [ -f ~/.cache/.themestyle.sh ]; then
     saved_theme=$(cat ~/.cache/.themestyle.sh)
     # Проверяем, есть ли разделитель
@@ -16,12 +15,10 @@ if [ -f ~/.cache/.themestyle.sh ]; then
     fi
 fi
 
-# Проверяем, существует ли папка темы
 if [ ! -d ~/.config/waybar/themes$theme ]; then
     theme="/CatMocha-HSlim"
 fi
 
-# Запускаем waybar
 if [[ $USER = "main" ]]; then
     waybar -c ~/.config/waybar/themes$theme/myconfig -s ~/.config/waybar/themes$theme/style.css &
 else

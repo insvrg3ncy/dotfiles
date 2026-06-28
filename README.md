@@ -3,7 +3,7 @@
 ## deps
 
 ```
-sudo pacman -S btop caja fish gtk3 gtk4 hyprland kitty systemd waybar hyprpicker hyprcursor hyprshot awww cava
+sudo pacman -S btop caja fish gtk3 gtk4 hyprland kitty systemd waybar hyprpicker hyprcursor hyprshot awww cava swaync swayimg
 ```
 
 ## install
